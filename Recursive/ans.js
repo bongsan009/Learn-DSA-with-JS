@@ -54,3 +54,22 @@ function range(start, end)
 
 // Ex usage: generate the range b/w start and end (exclusive).
 console.log(range(1, 10))
+
+
+// 4. Compute the sum of all elems inside an Array.
+function sumElems(list, index = 0)
+{
+    //BS: when the index reaches the len of the array, then we return 0 and stop the recursive.
+    if(list.length == index)
+    {
+        return 0;
+    }
+
+    //RC: get the elem of the current index and and add it with the rest of the array.
+    // Note: index + 1 : move to the next elem.
+    return list[index] + sumElems(list, index + 1)
+}
+
+// Ex usage:
+const list = [1,2,3,4,5];
+console.log(sumElems(list))
