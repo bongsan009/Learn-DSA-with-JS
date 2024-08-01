@@ -73,3 +73,17 @@ function sumElems(list, index = 0)
 // Ex usage:
 const list = [1,2,3,4,5];
 console.log(sumElems(list))
+
+
+// 5. Compute the exponent of a number.
+function exponent(base, power)
+{
+    //Our goal when the power is 0 return 1, and stop the recursive call.
+    let result = (power == 0)? 1 : base * exponent(base, power - 1);
+
+    //Return the final result.
+    return (result);
+}
+
+// Ex usage:
+console.log(exponent(2, 3))
