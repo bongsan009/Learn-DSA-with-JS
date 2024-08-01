@@ -34,3 +34,23 @@ function GCD(a, b)
 
 // Testing
 console.log(GCD(100, 5))
+
+
+// 3. Get integers in the range.
+function range(start, end)
+{
+    //BC: when (end - start == 2) which means it has only one number between start and end.
+    if(end - start == 2)
+    {
+        return [start + 1];
+    }
+
+    //RC:
+    let list = range(start, end - 1);
+    list.push(end - 1);
+
+    return list;
+}
+
+// Ex usage: generate the range b/w start and end (exclusive).
+console.log(range(1, 10))
