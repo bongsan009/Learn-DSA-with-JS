@@ -18,4 +18,5 @@ Recursive is the technique of making a function call itself. This technique prov
 10. Implement a Merge sort.
 11. Check whether a string is a plindrome or not.
 12. Find the max element in an Array.
+13. Reverse a string.
 ```

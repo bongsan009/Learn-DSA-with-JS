@@ -288,3 +288,18 @@ function findMax(list, ind = 1, max = list[0])
 
 // Ex usage:
 console.log(findMax(list))
+
+
+// 13. Reverse a string.
+function reverseString(str)
+{
+    if(str.length <= 1)
+    {
+        return str;
+    }
+
+    return reverseString(str.substring(1)) + str.charAt(0); 
+}
+
+// Ex usage:
+console.log(reverseString("san"))
